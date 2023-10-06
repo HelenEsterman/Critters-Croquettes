@@ -25,3 +25,7 @@ print(f'{miss_fuzz.name} the {miss_fuzz.species} is available to pet during the 
 print(f'{dottie.name} the {dottie.species} is available to pet during the {dottie.shift} shift.')
 print(f'{murph.name} the {murph.species} is available to pet during the {murph.shift} shift.')
 shere_khan.feed()
+dash.feed()
+remy.feed()
+print(shere_khan)
+print(dash)
