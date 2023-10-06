@@ -18,10 +18,4 @@ miss_fuzz = Llama("Miss Fuzz", "domestic llama")
 # miss_fuzz.name = "Miss Fuzz"
 # miss_fuzz.species = "domestic llama"
 
-llama_dictionary = []
-llama_dictionary.append(miss_fuzz)
-print(llama_dictionary)
-
-
-# for key in llama_dictionary.keys():
-#     print(f"{key}: {llama_dictionary[key]}")
+print(f"{miss_fuzz.name} is a {miss_fuzz.species} added on {miss_fuzz.date_added}")
