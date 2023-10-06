@@ -10,8 +10,3 @@ class FlowerHornFish:
         self.species = species
         self.date_added = date.today()
         self.swimming = True
-
-
-pudge = FlowerHornFish("Pudge", "domestic flower horn fish")
-
-print(f"{pudge.name} is a {pudge.species} added on {pudge.date_added}")

@@ -10,8 +10,3 @@ class Anaconda:
         self.species = species
         self.date_added = date.today()
         self.slithering = True
-
-
-nincki_minjaje = Anaconda("Nincki Minjaje", "domestic anaconda")
-
-print(f"{nincki_minjaje.name} is a {nincki_minjaje.species} added on {nincki_minjaje.date_added}")

@@ -10,8 +10,3 @@ class Python:
         self.species = species
         self.date_added = date.today()
         self.slithering = True
-
-
-sneeky = Python("Sneeky", "domestic python")
-
-print(f"{sneeky.name} is a {sneeky.species} added on {sneeky.date_added}")

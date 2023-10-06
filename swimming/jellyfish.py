@@ -10,8 +10,3 @@ class Jellyfish:
         self.species = species
         self.date_added = date.today()
         self.swimming = True
-
-
-genie = Jellyfish("Genie", "domestic jellyfish")
-
-print(f"{genie.name} is a {genie.species} added on {genie.date_added}")

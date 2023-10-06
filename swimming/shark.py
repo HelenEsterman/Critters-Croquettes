@@ -10,8 +10,3 @@ class Shark:
         self.species = species
         self.date_added = date.today()
         self.swimming = True
-
-
-bruce = Shark("Bruce", "domestic shark")
-
-print(f"{bruce.name} is a {bruce.species} added on {bruce.date_added}")

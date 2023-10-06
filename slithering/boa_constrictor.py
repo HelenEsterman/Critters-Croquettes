@@ -10,8 +10,3 @@ class BoaConstrictor:
         self.species = species
         self.date_added = date.today()
         self.slithering = True
-
-
-wayne = BoaConstrictor("Wayne", "domestic boa constrictor")
-
-print(f"{wayne.name} is a {wayne.species} added on {wayne.date_added}")

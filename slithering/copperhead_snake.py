@@ -10,8 +10,3 @@ class CopperheadSnake:
         self.species = species
         self.date_added = date.today()
         self.slithering = True
-
-
-penny = CopperheadSnake("Penny", "domestic copperhead snake")
-
-print(f"{penny.name} is a {penny.species} added on {penny.date_added}")

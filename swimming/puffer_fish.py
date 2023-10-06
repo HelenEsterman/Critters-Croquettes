@@ -10,8 +10,3 @@ class PufferFish:
         self.species = species
         self.date_added = date.today()
         self.swimming = True
-
-
-snoop_dogg = PufferFish("Snoop Dogg", "domestic puffer fish")
-
-print(f"{snoop_dogg.name} is a {snoop_dogg.species} added on {snoop_dogg.date_added}")
