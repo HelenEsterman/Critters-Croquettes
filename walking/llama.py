@@ -12,3 +12,6 @@ class Llama:
         self.food = food
         self.date_added = date.today()
         self.walking = True
+
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')

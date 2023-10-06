@@ -11,3 +11,6 @@ class Shark:
         self.food = food
         self.date_added = date.today()
         self.swimming = True
+
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
