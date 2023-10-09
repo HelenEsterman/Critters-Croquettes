@@ -6,5 +6,5 @@ class PettingZoo:
         self.description = description
         self.animals = list()
 
-    def add_animal(self):
-        return self.animals.append(self)
+    def add_animal(self, animal):
+        return self.animals.append(animal.name)

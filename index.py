@@ -1,6 +1,7 @@
 from slithering import Anaconda, BoaConstrictor, CopperheadSnake, Python, RatSnake
 from swimming import FlowerHornFish, Jellyfish, PufferFish, Shark, Stingray
 from walking import Donkey, Giraffe, Llama, Sloth, Tiger
+from attractions import PettingZoo, SnakePit, Wetlands
 
 
 shere_khan = Tiger("Shere Khan", "domestic tiger", "morning", "raw beef")
@@ -19,6 +20,13 @@ penny = CopperheadSnake("Penny", "domestic copperhead snake", "frozen mice")
 wayne = BoaConstrictor("Wayne", "domestic boa constrictor", "live mice")
 nincki_minjaje = Anaconda("Nincki Minjaje", "domestic anaconda", "live mice")
 
+slither_inn = SnakePit(
+    "The Slither Inn", "houses more snakes than an Indiana Jones movie")
+critter_cove = Wetlands(
+    "Critter Cove", "full of feathered friends and fantastic fish")
+varmint_village = PettingZoo(
+    "Varmint Village", "outdoor corral of friendly four-legged critters looking for a pat on the head and a handful of treats")
+
 print(f'{shere_khan.name} the {shere_khan.species} is available to pet during the {shere_khan.shift} shift.')
 print(f'{dash.name} the {dash.species} is available to pet during the {dash.shift} shift.')
 print(f'{miss_fuzz.name} the {miss_fuzz.species} is available to pet during the {miss_fuzz.shift} shift.')
@@ -31,3 +39,22 @@ print(shere_khan)
 print(dash)
 print(snoop_dogg)
 print(penny)
+
+varmint_village.add_animal(shere_khan)
+varmint_village.add_animal(miss_fuzz)
+varmint_village.add_animal(dash)
+varmint_village.add_animal(dottie)
+varmint_village.add_animal(murph)
+print(varmint_village.animals)
+critter_cove.add_animal(sting)
+critter_cove.add_animal(bruce)
+critter_cove.add_animal(snoop_dogg)
+critter_cove.add_animal(genie)
+critter_cove.add_animal(pudge)
+print(critter_cove.animals)
+slither_inn.add_animal(remy)
+slither_inn.add_animal(sneeky)
+slither_inn.add_animal(penny)
+slither_inn.add_animal(wayne)
+slither_inn.add_animal(nincki_minjaje)
+print(slither_inn.animals)
