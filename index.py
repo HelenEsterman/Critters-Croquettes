@@ -45,16 +45,40 @@ varmint_village.add_animal(miss_fuzz)
 varmint_village.add_animal(dash)
 varmint_village.add_animal(dottie)
 varmint_village.add_animal(murph)
-print(varmint_village.animals)
+# print(varmint_village.animals)
 critter_cove.add_animal(sting)
 critter_cove.add_animal(bruce)
 critter_cove.add_animal(snoop_dogg)
 critter_cove.add_animal(genie)
 critter_cove.add_animal(pudge)
-print(critter_cove.animals)
+# print(critter_cove.animals)
 slither_inn.add_animal(remy)
 slither_inn.add_animal(sneeky)
 slither_inn.add_animal(penny)
 slither_inn.add_animal(wayne)
 slither_inn.add_animal(nincki_minjaje)
-print(slither_inn.animals)
+# print(slither_inn.animals)
+
+varmint_list = ""
+
+for animal in varmint_village.animals:
+    varmint_list += f"""
+{animal.name} the {animal.species}"""
+
+print(f"""{varmint_village.attraction_name} is where you'll find {varmint_village.description} like, {varmint_list}""")
+
+critter_list = ""
+
+for animal in critter_cove.animals:
+    critter_list += f"""
+{animal.name} the {animal.species}"""
+
+print(f"""{critter_cove.attraction_name} is where you'll find {critter_cove.description} like, {critter_list}""")
+
+slither_list = ""
+
+for animal in slither_inn.animals:
+    slither_list += f"""
+{animal.name} the {animal.species}"""
+
+print(f"""{slither_inn.attraction_name} is where you'll find {slither_inn.description} like, {slither_list}""")

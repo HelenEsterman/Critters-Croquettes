@@ -7,4 +7,4 @@ class SnakePit:
         self.animals = list()
 
     def add_animal(self, animal):
-        return self.animals.append(animal.name)
+        return self.animals.append(animal)
