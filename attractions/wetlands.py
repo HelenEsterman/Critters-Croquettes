@@ -8,3 +8,7 @@ class Wetlands:
 
     def add_animal(self, animal):
         return self.animals.append(animal)
+
+    @property
+    def last_critter_added(self):
+        return self.animals[-1]

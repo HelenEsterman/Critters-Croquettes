@@ -5,7 +5,7 @@ from attractions import PettingZoo, SnakePit, Wetlands
 
 
 shere_khan = Tiger("Shere Khan", "domestic tiger", "morning", "raw beef")
-dash = Sloth("Dash", "domestic sloth", "midday", "eucalyptus")
+dash = Sloth("Dash", "domestic sloth", "midday", "eucalyptus", 645)
 miss_fuzz = Llama("Miss Fuzz", "domestic llama", "afternoon", "llama chow")
 dottie = Giraffe("Dottie", "domestic giraffe", "morning", "leaves")
 murph = Donkey("Murph", "domestic donkey", "afternoon", "donkey chow")
@@ -82,3 +82,22 @@ for animal in slither_inn.animals:
 {animal.name} the {animal.species}"""
 
 print(f"""{slither_inn.attraction_name} is where you'll find {slither_inn.description} like, {slither_list}""")
+
+
+print(miss_fuzz)
+miss_fuzz_dict = vars(miss_fuzz)
+
+for key in miss_fuzz_dict.keys():
+    print(f"{key}: {miss_fuzz_dict[key]}")
+
+
+sleepy = Sloth("Sleepy", "domestic sloth", "midday", "eucalyptus", 12345)
+print(sleepy.name)
+sleepy.name = "Changed"
+sleepy.chip_num = 845
+print(sleepy.chip_num)
+print(sleepy.name)
+
+print(slither_inn.last_critter_added)
+print(varmint_village.last_critter_added)
+print(critter_cove.last_critter_added)
