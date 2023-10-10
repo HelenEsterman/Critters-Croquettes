@@ -1,4 +1,4 @@
-from animal.animals import Animal
+from .animals import Animal
 from datetime import date
 
 

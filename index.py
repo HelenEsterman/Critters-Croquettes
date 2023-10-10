@@ -1,7 +1,5 @@
-from slithering import Anaconda, BoaConstrictor, CopperheadSnake, Python, RatSnake
-from swimming import FlowerHornFish, Jellyfish, PufferFish, Shark, Stingray
-from walking import Donkey, Giraffe, Llama, Sloth, Tiger
 from attractions import PettingZoo, SnakePit, Wetlands
+from animal import Anaconda, BoaConstrictor, CopperheadSnake, Python, RatSnake, FlowerHornFish, Jellyfish, PufferFish, Shark, Stingray, Donkey, Giraffe, Llama, Sloth, Tiger, Goose
 
 
 shere_khan = Tiger("Shere Khan", "domestic tiger", "raw beef", 123, "morning")
@@ -23,6 +21,7 @@ penny = CopperheadSnake(
 wayne = BoaConstrictor("Wayne", "domestic boa constrictor", "live mice", 139)
 nincki_minjaje = Anaconda(
     "Nincki Minjaje", "domestic anaconda", "live mice", 140)
+juice = Goose("Juice", "domestic goose", "fish", 150)
 
 slither_inn = SnakePit(
     "The Slither Inn", "houses more snakes than an Indiana Jones movie")
@@ -108,3 +107,12 @@ print(critter_cove.last_critter_added)
 
 miss_fuzz.feed()
 shere_khan.feed()
+print(shere_khan)
+print(juice)
+juice.walk()
+juice.swim()
+
+varmint_village.add_animal(juice)
+
+for animal in varmint_village.animals:
+    print(animal)
