@@ -1,7 +1,7 @@
-from animal.animals import Animal
+from .animals import Animal
 
 
-class Donkey(Animal):
+class Giraffe(Animal):
 
     def __init__(self, name, species, food, chip_num, shift):
         super().__init__(name, species, food, chip_num)
