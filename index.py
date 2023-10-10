@@ -107,3 +107,12 @@ print(critter_cove.last_critter_added)
 
 miss_fuzz.feed()
 shere_khan.feed()
+print(shere_khan)
+print(juice)
+juice.walk()
+juice.swim()
+
+varmint_village.add_animal(juice)
+
+for animal in varmint_village.animals:
+    print(animal)

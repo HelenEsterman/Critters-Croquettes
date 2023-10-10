@@ -14,3 +14,6 @@ class Goose(Animal, Walking, Swimming):
 
     def __str__(self):
         return f'{self.name} the Goose'
+
+    def walk(self):
+        print(f"{self.name} the goose waddles around")
