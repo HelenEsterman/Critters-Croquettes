@@ -4,21 +4,25 @@ from walking import Donkey, Giraffe, Llama, Sloth, Tiger
 from attractions import PettingZoo, SnakePit, Wetlands
 
 
-shere_khan = Tiger("Shere Khan", "domestic tiger", "morning", "raw beef")
-dash = Sloth("Dash", "domestic sloth", "midday", "eucalyptus", 645)
-miss_fuzz = Llama("Miss Fuzz", "domestic llama", "afternoon", "llama chow")
-dottie = Giraffe("Dottie", "domestic giraffe", "morning", "leaves")
-murph = Donkey("Murph", "domestic donkey", "afternoon", "donkey chow")
-sting = Stingray("Sting", "domestic stingray", "clams")
-bruce = Shark("Bruce", "domestic shark", "catfish")
-snoop_dogg = PufferFish("Snoop Dogg", "domestic puffer fish", "mussels")
-genie = Jellyfish("Genie", "domestic jellyfish", "oysters")
-pudge = FlowerHornFish("Pudge", "domestic flower horn fish", "fish pellets")
-remy = RatSnake("Remy", "domestic rat snake", "frozen mice")
-sneeky = Python("Sneeky", "domestic python", "live mice")
-penny = CopperheadSnake("Penny", "domestic copperhead snake", "frozen mice")
-wayne = BoaConstrictor("Wayne", "domestic boa constrictor", "live mice")
-nincki_minjaje = Anaconda("Nincki Minjaje", "domestic anaconda", "live mice")
+shere_khan = Tiger("Shere Khan", "domestic tiger", "raw beef", 123, "morning")
+dash = Sloth("Dash", "domestic sloth", "eucalyptus", 124, "midday")
+miss_fuzz = Llama("Miss Fuzz", "domestic llama",
+                  "llama chow", 125, "afternoon")
+dottie = Giraffe("Dottie", "domestic giraffe", "leaves", 126, "morning")
+murph = Donkey("Murph", "domestic donkey", "donkey chow", 127, "afternoon")
+sting = Stingray("Sting", "domestic stingray", "clams", 128)
+bruce = Shark("Bruce", "domestic shark", "catfish", 129)
+snoop_dogg = PufferFish("Snoop Dogg", "domestic puffer fish", "mussels", 130)
+genie = Jellyfish("Genie", "domestic jellyfish", "oysters", 134)
+pudge = FlowerHornFish(
+    "Pudge", "domestic flower horn fish", "fish pellets", 135)
+remy = RatSnake("Remy", "domestic rat snake", "frozen mice", 136)
+sneeky = Python("Sneeky", "domestic python", "live mice", 137)
+penny = CopperheadSnake(
+    "Penny", "domestic copperhead snake", "frozen mice", 138)
+wayne = BoaConstrictor("Wayne", "domestic boa constrictor", "live mice", 139)
+nincki_minjaje = Anaconda(
+    "Nincki Minjaje", "domestic anaconda", "live mice", 140)
 
 slither_inn = SnakePit(
     "The Slither Inn", "houses more snakes than an Indiana Jones movie")
@@ -91,7 +95,7 @@ for key in miss_fuzz_dict.keys():
     print(f"{key}: {miss_fuzz_dict[key]}")
 
 
-sleepy = Sloth("Sleepy", "domestic sloth", "midday", "eucalyptus", 12345)
+sleepy = Sloth("Sleepy", "domestic sloth", "eucalyptus", 12345, "midday")
 print(sleepy.name)
 sleepy.name = "Changed"
 sleepy.chip_num = 845
@@ -101,3 +105,6 @@ print(sleepy.name)
 print(slither_inn.last_critter_added)
 print(varmint_village.last_critter_added)
 print(critter_cove.last_critter_added)
+
+miss_fuzz.feed()
+shere_khan.feed()

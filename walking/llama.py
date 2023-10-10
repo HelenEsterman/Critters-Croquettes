@@ -1,20 +1,14 @@
+from animal.animals import Animal
 from datetime import date
 
 
-class Llama:
+class Llama(Animal):
 
-    def __init__(self, name, species, shift, food):
-        # Establish the properties of each animal
-        # with a default value
-        self.name = name
-        self.species = species
-        self.shift = shift
-        self.food = food
-        self.date_added = date.today()
+    def __init__(self, name, species, food, chip_num, shift):
+        super().__init__(name, species, food, chip_num)
         self.walking = True
+        self.shift = shift
 
     def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    # def __str__(self):
-    #     return f"{self.name} is a {self.species}"
+        print(
+            f'on {date.today()}, {self.name} had "Rockytop" sung to it so it would eat its {self.food}')

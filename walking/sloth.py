@@ -1,29 +1,9 @@
-from datetime import date
+from animal.animals import Animal
 
 
-class Sloth:
+class Sloth(Animal):
 
-    def __init__(self, name, species, shift, food, chip_num):
-        # Establish the properties of each animal
-        # with a default value
-        self.name = name
-        self.species = species
-        self.shift = shift
-        self.food = food
-        self.date_added = date.today()
+    def __init__(self, name, species, food, chip_num, shift):
+        super().__init__(name, species, food, chip_num)
         self.walking = True
-        self.__chip_num = chip_num
-
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f"{self.name} is a {self.species}"
-
-    @property
-    def chip_num(self):
-        return self.__chip_num
-
-    @chip_num.setter
-    def chip_num(self, number):
-        pass
+        self.shift = shift
