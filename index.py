@@ -1,5 +1,5 @@
-from attractions import PettingZoo, SnakePit, Wetlands
 from animal import Anaconda, BoaConstrictor, CopperheadSnake, Python, RatSnake, FlowerHornFish, Jellyfish, PufferFish, Shark, Stingray, Donkey, Giraffe, Llama, Sloth, Tiger, Goose
+from attractions import PettingZoo, SnakePit, Wetlands
 
 
 shere_khan = Tiger("Shere Khan", "domestic tiger", "raw beef", 123, "morning")
@@ -62,29 +62,29 @@ slither_inn.add_animal(wayne)
 slither_inn.add_animal(nincki_minjaje)
 # print(slither_inn.animals)
 
-varmint_list = ""
+# varmint_list = ""
 
-for animal in varmint_village.animals:
-    varmint_list += f"""
-{animal.name} the {animal.species}"""
+# for animal in varmint_village.animals:
+#     varmint_list += f"""
+# {animal.name} the {animal.species}"""
 
-print(f"""{varmint_village.attraction_name} is where you'll find {varmint_village.description} like, {varmint_list}""")
+# print(f"""{varmint_village.attraction_name} is where you'll find {varmint_village.description} like, {varmint_list}""")
 
-critter_list = ""
+# critter_list = ""
 
-for animal in critter_cove.animals:
-    critter_list += f"""
-{animal.name} the {animal.species}"""
+# for animal in critter_cove.animals:
+#     critter_list += f"""
+# {animal.name} the {animal.species}"""
 
-print(f"""{critter_cove.attraction_name} is where you'll find {critter_cove.description} like, {critter_list}""")
+# print(f"""{critter_cove.attraction_name} is where you'll find {critter_cove.description} like, {critter_list}""")
 
-slither_list = ""
+# slither_list = ""
 
-for animal in slither_inn.animals:
-    slither_list += f"""
-{animal.name} the {animal.species}"""
+# for animal in slither_inn.animals:
+#     slither_list += f"""
+# {animal.name} the {animal.species}"""
 
-print(f"""{slither_inn.attraction_name} is where you'll find {slither_inn.description} like, {slither_list}""")
+# print(f"""{slither_inn.attraction_name} is where you'll find {slither_inn.description} like, {slither_list}""")
 
 
 print(miss_fuzz)
@@ -113,6 +113,16 @@ juice.walk()
 juice.swim()
 
 varmint_village.add_animal(juice)
+
+for animal in varmint_village.animals:
+    print(animal)
+
+
+varmint_village.add_animal(sting)
+varmint_village.add_animal(shere_khan)
+varmint_village.add_animal(dash)
+varmint_village.add_animal(sleepy)
+print(varmint_village.animals)
 
 for animal in varmint_village.animals:
     print(animal)

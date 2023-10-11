@@ -16,6 +16,5 @@ class Attraction:
     def __len__(self):
         return len(self.animals)
 
-    @property
     def last_critter_added(self):
         return self.animals[-1]

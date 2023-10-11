@@ -1,9 +1,10 @@
+from movements.walking import Walking
 from .animals import Animal
 
 
-class Tiger(Animal):
+class Tiger(Animal, Walking):
 
     def __init__(self, name, species, food, chip_num, shift):
-        super().__init__(name, species, food, chip_num)
-        self.walking = True
+        Animal.__init__(self, name, species, food, chip_num)
         self.shift = shift
+        Walking.__init__(self)
